@@ -89,7 +89,7 @@ export default function Footer() {
           id="socmeds-container"
           className="gap-8 flex flex-row justify-between lg:mr-auto"
         >
-            <a href="https://www.instagram.com/ristek.csui/">
+            <a href="https://www.instagram.com/ristek.csui/" target="_blank">
                 <Image
                     src="/icons/instagram.svg"
                     alt="RISTEK's Instagram"
@@ -98,7 +98,7 @@ export default function Footer() {
                 />
             </a>
 
-            <a href="https://twitter.com/RistekCSUI">
+            <a href="https://twitter.com/RistekCSUI" target="_blank">
                 <Image
                     src="/icons/twitter.svg"
                     alt="RISTEK's Twitter"
@@ -107,7 +107,7 @@ export default function Footer() {
                 />
             </a>
 
-            <a href="https://www.linkedin.com/company/ristek-fakultas-ilmu-komputer-universitas-indonesia">
+            <a href="https://www.linkedin.com/company/ristek-fakultas-ilmu-komputer-universitas-indonesia" target="_blank">
                 <Image
                     src="/icons/linkedin.svg"
                     alt="RISTEK's LinkedIn"
@@ -116,7 +116,7 @@ export default function Footer() {
                 />
             </a>
 
-            <a href="https://liff.line.me/1645278921-kWRPP32q?accountId=rye2953f&openerPlatform=webview&openerKey=webview%3AunifiedSearch">
+            <a href="https://liff.line.me/1645278921-kWRPP32q?accountId=rye2953f&openerPlatform=webview&openerKey=webview%3AunifiedSearch" target="_blank">
                 <Image
                     src="/icons/line.svg"
                     alt="RISTEK's Official Account LINE"
@@ -125,7 +125,7 @@ export default function Footer() {
                 />
             </a>
 
-            <a href="https://medium.com/ristek-fasilkom">
+            <a href="https://medium.com/ristek-fasilkom" target="_blank">
                 <Image
                     src="/icons/medium.svg"
                     alt="RISTEK's Medium"
