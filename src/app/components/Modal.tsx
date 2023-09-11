@@ -15,32 +15,32 @@ export default function Modal(props : any) : JSX.Element {
 
     const susunJadwal : Contributors[] = [
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Icha",
             role:"Product Manager"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Viona",
             role:"Product Manager"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Fajar",
             role:"Front-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Azmy",
             role:"Front-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Arshad",
             role:"Designer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Davyn Reinhard",
             role:"Product"
         }
@@ -48,42 +48,42 @@ export default function Modal(props : any) : JSX.Element {
     
     const bikunTracker : Contributors[] = [
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Evan",
             role:"Product Manager"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Qissa",
             role:"Product Manager"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Zuhal",
             role:"Front-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Ricky",
             role:"Front-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Abby",
             role:"Designer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Jeremy Alva Pratama",
             role:"Product"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Davyn Reinhard",
             role:"Product"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Vincent Suryakim",
             role:"Git Contributor"
         }
@@ -91,37 +91,37 @@ export default function Modal(props : any) : JSX.Element {
 
     const ristekLink : Contributors[] = [
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Mira",
             role:"Product Manager"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Indra",
             role:"Front-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Umar",
             role:"Back-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Marcel",
             role:"Back-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Ahmadhi",
             role:"Back-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Arya Adirianto",
             role:"Designer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Jeremy Alva Pratama",
             role:"Product"
         }
@@ -129,27 +129,27 @@ export default function Modal(props : any) : JSX.Element {
 
     const ulasKelas : Contributors[] = [
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Dien",
             role:"Product Manager"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Edu",
             role:"Front-end Engineer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Priyanka",
             role:"Designer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Imo",
             role:"Designer"
         },
         {
-            url:"/images/placeholder.png",
+            url:"/assets/logogram.svg",
             name:"Henry Soedibjo",
             role:"Product"
         }
@@ -222,7 +222,7 @@ export default function Modal(props : any) : JSX.Element {
             return contributorsMerged;
         }
     };
-    
+
     useEffect(() => {
         fetchContributors();
     }, [fetchContributors]);
@@ -258,7 +258,11 @@ export default function Modal(props : any) : JSX.Element {
                             pt-[8px] pb-[8px]
                             sm:pl-0 pl-[8px]
                             sm:pr-0 pr-[8px]">
-                {(contributors != null) && gitContributionList}
+                {(app.toString() == bikunTracker.toString())? gitContributionList :
+                 
+                ((contributors.length == 0)? 
+                    <p>Loading ...</p>
+                :gitContributionList)}
             </div>
         </div>
     )
