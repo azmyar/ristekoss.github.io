@@ -41,6 +41,16 @@ export default function Contributors() {
             name:"Henry",
             role:"Product"
         },
+        {
+            url:"/assets/logogram.svg",
+            name:"jonathanfilbert",
+            role:"Git Contributor"
+        },
+        {
+            url:"/assets/logogram.svg",
+            name:"vincentsuryakim",
+            role:"Git Contributor"
+        },
     ]
 
     return (
@@ -50,7 +60,7 @@ export default function Contributors() {
                 <div className="flex flex-row justify-between w-[100%] justify-center items-center pt-[40px]">
                     <img src={"/assets/decor-s-1.svg"} className="left-0 max-w-[15%]"></img>
                     <p className="text-[color:var(--primary-colors-purple-heart,#5038BC)] sm:text-7xl text-2xl text-center font-bold">
-                        The Developers!
+                        People Behind the App
                     </p>
                     <img src={"/assets/decor-s-2.svg"} className="right-0 max-w-[15%]"></img>
                 </div>
