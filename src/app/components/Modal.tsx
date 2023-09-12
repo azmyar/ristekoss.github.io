@@ -244,7 +244,7 @@ export default function Modal(props : any) : JSX.Element {
             role="Git Contributor"
         />
     ))).concat([
-        <div className="flex items-center justify-left gap-2.5 
+        <div key={"end"} className="flex items-center justify-left gap-2.5 
                         sm:px-5 px-3 sm:py-4 py-2.5 rounded-[20px] 
                         sm:w-[376px] w-[304px] sm:max-h-[138px] max-h-[100px]">
             <p className="font-bold sm:text-2xl text-xl text-[#45349F]">... and many more</p>
