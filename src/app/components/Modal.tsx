@@ -243,7 +243,14 @@ export default function Modal(props : any) : JSX.Element {
             url={user.avatar_url}
             role="Git Contributor"
         />
-    )));
+    ))).concat([
+        <div className="flex items-center justify-left gap-2.5 
+                        sm:px-5 px-3 sm:py-4 py-2.5 rounded-[20px] 
+                        sm:w-[376px] w-[304px] sm:max-h-[138px] max-h-[100px]">
+            <p className="font-bold sm:text-2xl text-xl text-[#45349F]">... and many more</p>
+
+        </div>
+    ]);
 
     return (
         <div className="fade fixed mt-[64px] flex flex-col items-center sm:gap-[20px] md:gap-[40px] gap-[12px] sm:p-[40px] md:p-[60px] p-[20px] w-[90%] sm:max-h-[564px] max-h-[80%] rounded-[20px] bg-white">

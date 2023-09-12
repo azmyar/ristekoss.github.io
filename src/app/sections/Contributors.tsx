@@ -12,40 +12,35 @@ export default function Contributors() {
 
     const contributors : Contributors[] = [
         {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
+            url:"/assets/logogram.svg",
+            name:"Dien",
+            role:"Product Manager"
+        },
+        {
+            url:"/assets/logogram.svg",
+            name:"Michelle",
+            role:"Product Manager"
+        },
+        {
+            url:"/assets/logogram.svg",
+            name:"Azmy",
+            role:"Front-end Engineer"
+        },
+        {
+            url:"/assets/logogram.svg",
+            name:"Raisyam",
+            role:"Front-end Engineer"
+        },
+        {
+            url:"/assets/logogram.svg",
+            name:"Dimas",
             role:"Designer"
         },
         {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
-            role:"Designer"
+            url:"/assets/logogram.svg",
+            name:"Henry",
+            role:"Product"
         },
-        {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
-            role:"Designer"
-        },
-        {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
-            role:"Designer"
-        },
-        {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
-            role:"Designer"
-        },
-        {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
-            role:"Designer"
-        },
-        {
-            url:"/images/placeholder.png",
-            name:"Tukang Ulas Kelas",
-            role:"Designer"
-        }
     ]
 
     return (
